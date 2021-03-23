@@ -1,27 +1,12 @@
-# DsiViernes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Consideraciones
+- Generado diagrama de flujo (routing) en lucid chart.
+- Fijado idioma común de trabajo Inglés para el diagrama de flujo.
+- Generados servicios en diagrama de flujo.
+- Las líneas rojas del diagrama estipulan un enlace routing entre los componentes (rutas con el mismo nombre que el componente).
+- Las líneas azules etipulan el flujo entre la inyección de dependencias servicio-controlador.
+- Las flechas bidireccionales estipulan flujo de información asíncrona.
+- Se ha definido la leyenda en el diagrama con el fin de la comprensión del mismo.
+- Se ha implementado el diagrama utilizando los comandos nativos de angular: ng generate (service, component, guard).
+- Se han definido los módulos logged-in y logged-out como base de trabajo. Core es el módulo común.
+- Los guard tienen el modo CanActivate para prevenir la postcarga de las rutas.
+- Se ha elegido SCSS como gestor de preprocesador de estilos.
