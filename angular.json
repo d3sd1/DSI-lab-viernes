@@ -123,5 +123,10 @@
       }
     }
   },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "sass"
+    }
+  },
   "defaultProject": "dsi-viernes"
 }
