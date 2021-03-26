@@ -6,7 +6,7 @@ import {UserService} from '../core/user.service';
 @Injectable({
   providedIn: 'root'
 })
-export class LoggedInGuard implements CanActivate {
+export class LoggedOutGuard implements CanActivate {
   constructor(private userService: UserService, private router: Router) {
   }
 
@@ -14,8 +14,8 @@ export class LoggedInGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Promise<boolean | UrlTree> {
     const loggedIn = await this.userService.isLoggedIn();
-    if (!loggedIn) {
-      return this.router.parseUrl('/logged-out');
+    if (loggedIn) {
+      return this.router.parseUrl('/logged-in');
     }
     return true;
   }

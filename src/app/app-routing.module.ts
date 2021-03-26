@@ -9,7 +9,7 @@ const routes: Routes = [
     redirectTo: '/animation'
   },
   {
-    path: '/animation',
+    path: 'animation',
     component: AnimationComponent
   },
   {
